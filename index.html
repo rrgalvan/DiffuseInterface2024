@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diffuse Interface Models in Physics and Biology</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 1px;
+}
+.myNavbar {
+  margin: 64;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar" style="letter-spacing:0px";>
+    <a href="#home" class="w3-bar-item w3-button w3-large" style="letter-spacing:2px">Diffuse Interface Models in Physics and Biology</a>
+    <!-- Right-sided navbar links -->
+    <span class="w3-right w3-hide-small w3-normal">
+      <a href="#overview" class="w3-bar-item w3-button"><span  style="vertical-align:-0.25em"><i class="fa fa-info-circle">&nbsp;</i>Overview</span></a>
+      <a href="#team" class="w3-bar-item w3-button"><span  style="vertical-align:-0.25em"><i class="fa fa-user">&nbsp;</i>Team</span></a>
+      <a href="#contact"  class="w3-bar-item w3-button"><span  style="vertical-align:-0.25em"><i class="fa fa-envelope">&nbsp;</i> Contact</span></a>
+    </span>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#overview" onclick="w3_close()" class="w3-bar-item w3-button">Overview</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Team</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- <header class="w3-display-container w3-content w3-wide " style="max-width:1600px;min-width:600px" id="home"> -->
+<header class="w3-display-container w3-content w3-wide " style="max-width:1600px" id="home">
+  <img class="w3-image" src="https://www.ecm2024sevilla.com/templates/yootheme/cache/1b/banner1v2-1bcd0139.webp" alt="Special session" width="1600" height="800"> 
+</header>
+
+<!-- Overview -->
+<div class="w3-container" style="padding:32px 32px" id="overview">
+  <h3>Overview</h3>
+  The 9th European Congress of Mathematics (9ECM) will be held in Seville from 15 to 19 July 2024. Our team, formed by Francisco Guillén-González, J. Rafael Rodríguez-Galván and Daniel Acosta-Soba, has been interested for years on numerical analysis and simulation of Phase Filed and Diffuse Interface models, oriented to applications to physics and biology. Recently, our research has focused on modelling of tumor growth using this kind of  models. In this regard, we are preparing a 9ECM-minisymposium proposal focused on "<b>Diffuse Interface Models in Physics and Biology</b>".
+</div>
+
+<!-- Team -->
+<div class="w3-container" style="padding:16px 32px" id="team">
+  <h3>Team</h3>
+  <a href="https://personal.us.es/guillen/guillen/Home.html">Francisco Guillén-González</a>
+  <ul>
+    <li><a href="https://scholar.google.com/citations?user=szI1px4AAAAJ">Google Scholar profile</a></li>
+  </ul>
+  <a href="https://rrgalvan.github.io/">J. Rafael Rodríguez-Galván</a>
+  <ul>
+    <li><a href="https://scholar.google.com/citations?user=uFldLV4AAAAJ">Google Scholar profile</a></li>
+  </ul>
+      Daniel Acosta-Soba 
+  <ul>
+    <li><a href="https://scholar.google.com/citations?hl=es&user=SvzuUPkAAAAJ">Google Scholar profile</a></li>
+  </ul>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
